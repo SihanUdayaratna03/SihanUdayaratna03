@@ -1,18 +1,18 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00c6ff,0072ff&height=220&section=header&text=Sihan%20Udayaratna&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Undergraduate%20|%20Builder%20|%20AI%20Enthusiast&descSize=20&descColor=ffffff&descAlignY=65&animation=twinkling" alt="Sihan Udayaratna Banner" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:87CEEB,100:1E90FF&height=220&section=header&text=Sihan%20Udayaratna&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Undergraduate%20%7C%20Builder%20%7C%20AI%20Enthusiast&descSize=20&descColor=ffffff&descAlignY=65&animation=twinkling" alt="Sihan Udayaratna Banner" width="100%"/>
   <br/>
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Computer+Science+Undergraduate;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=1E90FF&center=true&vCenter=true&width=500&lines=Computer+Science+Undergraduate;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast" alt="Typing SVG" />
   </a>
   <br/>
   <a href="https://github.com/SihanUdayaratna03">
-    <img src="https://img.shields.io/badge/PROFILE_VIEWS-188-0d1117?style=for-the-badge&logoColor=white&color=38BDF8" alt="Profile Views"/>
+    <img src="https://img.shields.io/badge/PROFILE_VIEWS-188-0d1117?style=for-the-badge&logoColor=white&color=1E90FF" alt="Profile Views"/>
   </a>
   <a href="https://github.com/SihanUdayaratna03?tab=followers">
-    <img src="https://img.shields.io/badge/FOLLOWERS-3-0d1117?style=for-the-badge&logo=github&color=38BDF8" alt="Followers"/>
+    <img src="https://img.shields.io/badge/FOLLOWERS-6-0d1117?style=for-the-badge&logo=github&color=1E90FF" alt="Followers"/>
   </a>
   <a href="https://sihanudayaratna.vercel.app">
-    <img src="https://img.shields.io/badge/OPEN_TO-INTERNSHIPS_&_COLLABS-0d1117?style=for-the-badge&color=2ea043" alt="Open To"/>
+    <img src="https://img.shields.io/badge/OPEN_TO-INTERNSHIPS_%26_COLLABS-0d1117?style=for-the-badge&color=2ea043" alt="Open To"/>
   </a>
 </div>
 
@@ -20,9 +20,8 @@
 
 ### System Status: About Me
 
-<a href="https://github.com/SihanUdayaratna03">
-  <img align="right" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/coding.gif" alt="Live Coding Animation" width="350" />
-</a>
+<div>
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Live Coding" align="right" width="380"/>
 
 ```yaml
 Welcome
@@ -30,12 +29,15 @@ Welcome
 Name       : "Sihan Udayaratna"
 Role       : "Computer Science Undergraduate"
 Location   : "Sri Lanka"
-Interests  : 
+Interests  :
   - "AI & Machine Learning"
   - "Backend Development"
   - "Full-Stack & Mobile Dev"
 Portfolio  : "sihanudayaratna.vercel.app"
 ```
+
+</div>
+
 <br clear="both"/>
 
 ---
@@ -58,7 +60,7 @@ Portfolio  : "sihanudayaratna.vercel.app"
 ### Contribution Analytics
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SihanUdayaratna03&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SihanUdayaratna03&bg_color=0d1117&color=1E90FF&line=1E90FF&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="100%" />
 </div>
 
 ---
@@ -77,5 +79,5 @@ Portfolio  : "sihanudayaratna.vercel.app"
 <br />
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=SihanUdayaratna03&color=38BDF8&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=SihanUdayaratna03&color=1E90FF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 </div>
