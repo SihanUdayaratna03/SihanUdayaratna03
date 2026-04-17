@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=003366&height=220&section=header&text=Sihan%20Udayaratna&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Undergraduate%20|%20Builder%20|%20AI%20Enthusiast&descSize=20&descColor=38BDF8&descAlignY=65&animation=twinkling" alt="Sihan Udayaratna Banner" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00c6ff,0072ff&height=220&section=header&text=Sihan%20Udayaratna&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Undergraduate%20|%20Builder%20|%20AI%20Enthusiast&descSize=20&descColor=ffffff&descAlignY=65&animation=twinkling" alt="Sihan Udayaratna Banner" width="100%"/>
   <br/>
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Computer+Science+Undergraduate;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast" alt="Typing SVG" />
@@ -20,9 +20,9 @@
 
 ### System Status: About Me
 
-<table>
-  <tr>
-    <td width="60%">
+<a href="https://github.com/SihanUdayaratna03">
+  <img align="right" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/coding.gif" alt="Live Coding Animation" width="350" />
+</a>
 
 ```yaml
 Welcome
@@ -36,15 +36,7 @@ Interests  :
   - "Full-Stack & Mobile Dev"
 Portfolio  : "sihanudayaratna.vercel.app"
 ```
-
-</td>
-<td width="40%">
-<div align="center">
-<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/coding.gif" alt="Live Coding Animation" width="100%" />
-</div>
-</td>
-</tr>
-</table>
+<br clear="both"/>
 
 ---
 
