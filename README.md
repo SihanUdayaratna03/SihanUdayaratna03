@@ -1,13 +1,18 @@
 <div align="center">
-  <img src="https://i.pinimg.com/originals/ce/1f/28/ce1f28b0ebc90533df01eb0f99333a39.gif" alt="Banner" width="100%"/>
-  <br/>
-  <h1><samp>Welcome to my Github</samp></h1>
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Computer+Science+Undergraduate;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast" alt="Typing SVG" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=2,5,8,38BDF8&height=220&section=header&text=Sihan%20Udayaratna&fontSize=50&fontColor=ffffff&desc=Undergraduate%20|%20Builder%20|%20AI%20Enthusiast&descSize=20&descColor=dddddd" alt="Sihan Udayaratna Banner" width="100%"/>
+  <br/><br/>
+  <a href="https://github.com/SihanUdayaratna03">
+    <img src="https://img.shields.io/badge/PROFILE_VIEWS-188-0d1117?style=for-the-badge&logoColor=white&color=38BDF8" alt="Profile Views"/>
+  </a>
+  <a href="https://github.com/SihanUdayaratna03?tab=followers">
+    <img src="https://img.shields.io/badge/FOLLOWERS-3-0d1117?style=for-the-badge&logo=github&color=38BDF8" alt="Followers"/>
+  </a>
+  <a href="https://sihanudayaratna.vercel.app">
+    <img src="https://img.shields.io/badge/OPEN_TO-INTERNSHIPS_&_COLLABS-0d1117?style=for-the-badge&color=2ea043" alt="Open To"/>
   </a>
 </div>
 
----
+<br/>
 
 ### System Status: About Me
 
@@ -27,7 +32,7 @@ Portfolio  : <a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel
     </td>
     <td width="40%">
       <div align="center">
-        <img src="https://cdn.arstechnica.net/wp-content/uploads/2025/08/github_logo_invertocat_dark_5-1152x648-1754938613.jpeg" alt="GitHub Logo" width="90%" style="border-radius: 10px;" />
+        <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="Developer Illustration" width="100%" />
       </div>
     </td>
   </tr>
