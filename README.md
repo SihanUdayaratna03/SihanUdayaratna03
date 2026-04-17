@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+<div align="center">
+  <img src="https://i.pinimg.com/originals/ce/1f/28/ce1f28b0ebc90533df01eb0f99333a39.gif" alt="Banner" width="100%"/>
+  <br/>
+  <h1><samp>Welcome to my dungeon</samp></h1>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Computer+Science+Undergraduate;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast" alt="Typing SVG" />
+  </a>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### 🕵️ System Status: About Me
 
-In the project directory, you can run:
+<table>
+  <tr>
+    <td width="60%">
+<pre><code>whoami
+------------------------------------------------
+Name       : Sihan Udayaratna
+Role       : Computer Science Undergraduate
+Location   : Sri Lanka
+Interests  : 
+  - AI & Machine Learning
+  - Backend Development
+  - Full-Stack & Mobile Dev
+Portfolio  : <a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel.app</a></code></pre>
+    </td>
+    <td width="40%">
+      <div align="center">
+        <img src="https://user-images.githubusercontent.com/73097560/115834471-27466100-a42f-11eb-9bc3-066c61f21ab2.gif" alt="Developer Illustration" width="90%" />
+      </div>
+    </td>
+  </tr>
+</table>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🧠 Core Processor (Languages & Tools)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=c,java,py,js,ts,html,css,react,nodejs,express,postgres,linux" />
+  </a>
+  <br />
+  <br />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,vscode,docker,figma,postman,vercel,vite" />
+  </a>
+</div>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📈 Contribution Analytics
 
-### `npm run build`
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SihanUdayaratna03&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="100%" />
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📊 Network Activity & Stats
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SihanUdayaratna03&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</div>
+<br />
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=SihanUdayaratna03&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SihanUdayaratna03&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
+</div>
 
-### `npm run eject`
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  <img src="https://profile-counter.glitch.me/SihanUdayaratna03/count.svg" alt="Profile Views" />
+</div>
