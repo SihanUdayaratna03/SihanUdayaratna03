@@ -1,79 +1,97 @@
-<svg width="500" height="290" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#1E90FF;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1E90FF;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
-    </linearGradient>
-  </defs>
+<svg width="530" height="320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Editor window background -->
+  <rect width="530" height="320" rx="10" fill="#1e1e1e" stroke="#3c3c3c" stroke-width="1.5"/>
 
-  <!-- Card background -->
-  <rect width="500" height="290" rx="14" fill="url(#bgGrad)" stroke="#21262d" stroke-width="1.5"/>
+  <!-- Tab bar background -->
+  <rect width="530" height="36" rx="10" fill="#2d2d2d"/>
+  <rect y="18" width="530" height="18" fill="#2d2d2d"/>
 
-  <!-- Top gradient accent bar -->
-  <rect width="500" height="4" rx="2" fill="url(#accentBar)"/>
+  <!-- Active tab -->
+  <rect x="0" y="0" width="175" height="36" fill="#1e1e1e" rx="6"/>
+  <rect x="0" y="30" width="175" height="6" fill="#1e1e1e"/>
+  <!-- Active tab top indicator line -->
+  <rect x="0" y="0" width="175" height="2.5" rx="1" fill="#569cd6"/>
 
-  <!-- Left vertical accent line -->
-  <rect x="18" y="18" width="3" height="254" rx="1.5" fill="url(#accentBar)"/>
+  <!-- Python logo dot -->
+  <circle cx="18" cy="18" r="5" fill="#3572A5"/>
+  <!-- Tab filename -->
+  <text x="30" y="23" font-family="Consolas,monospace" font-size="12.5" fill="#cccccc">about_sihan.py</text>
+  <!-- Close icon -->
+  <text x="155" y="23" font-family="Arial" font-size="11" fill="#858585">✕</text>
 
-  <!-- Name -->
-  <text x="38" y="50" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="url(#nameGrad)">Sihan Udayaratna</text>
+  <!-- Gutter / line number background -->
+  <rect x="0" y="36" width="36" height="284" fill="#1e1e1e"/>
+  <!-- Gutter right border -->
+  <line x1="36" y1="36" x2="36" y2="320" stroke="#3c3c3c" stroke-width="1" opacity="0.6"/>
 
-  <!-- Role pill -->
-  <rect x="38" y="60" width="215" height="22" rx="11" fill="#1c2a3a"/>
-  <text x="48" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#58a6ff">&#x1F393; CS Undergraduate · SLIIT</text>
+  <!-- ====== LINE 1 ====== y=62 -->
+  <text x="10" y="62" font-family="Consolas,monospace" font-size="11.5" fill="#858585">1</text>
+  <text x="48" y="62" font-family="Consolas,monospace" font-size="12.5" fill="#6a9955"># ── Personal Info ──────────────────────</text>
 
-  <!-- Location pill -->
-  <rect x="262" y="60" width="110" height="22" rx="11" fill="#1a1a2e"/>
-  <text x="272" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#a78bfa">&#x1F4CD; Sri Lanka</text>
+  <!-- ====== LINE 2 ====== y=84 -->
+  <text x="10" y="84" font-family="Consolas,monospace" font-size="11.5" fill="#858585">2</text>
+  <text x="48" y="84" font-family="Consolas,monospace" font-size="12.5" fill="#569cd6">class </text>
+  <text x="91" y="84" font-family="Consolas,monospace" font-size="12.5" fill="#4ec9b0">Developer</text>
+  <text x="157" y="84" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">:</text>
 
-  <!-- Divider line -->
-  <line x1="38" y1="95" x2="478" y2="95" stroke="#21262d" stroke-width="1"/>
+  <!-- ====== LINE 3 ====== y=106 -->
+  <text x="10" y="106" font-family="Consolas,monospace" font-size="11.5" fill="#858585">3</text>
+  <text x="48" y="106" font-family="Consolas,monospace" font-size="12.5" fill="#9cdcfe">    name      </text>
+  <text x="164" y="106" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">= </text>
+  <text x="181" y="106" font-family="Consolas,monospace" font-size="12.5" fill="#ce9178">"Sihan Udayaratna"</text>
 
-  <!-- Section: Focus label -->
-  <text x="38" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="10" letter-spacing="1.5" fill="#6e7681">FOCUS AREAS</text>
+  <!-- ====== LINE 4 ====== y=128 -->
+  <text x="10" y="128" font-family="Consolas,monospace" font-size="11.5" fill="#858585">4</text>
+  <text x="48" y="128" font-family="Consolas,monospace" font-size="12.5" fill="#9cdcfe">    university</text>
+  <text x="164" y="128" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">= </text>
+  <text x="181" y="128" font-family="Consolas,monospace" font-size="12.5" fill="#ce9178">"SLIIT, Sri Lanka"</text>
 
-  <!-- Focus chips -->
-  <rect x="38" y="122" width="90" height="22" rx="11" fill="#0d2137"/>
-  <text x="48" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#38bdf8">AI / ML</text>
+  <!-- ====== LINE 5 ====== y=150 -->
+  <text x="10" y="150" font-family="Consolas,monospace" font-size="11.5" fill="#858585">5</text>
+  <text x="48" y="150" font-family="Consolas,monospace" font-size="12.5" fill="#9cdcfe">    degree    </text>
+  <text x="164" y="150" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">= </text>
+  <text x="181" y="150" font-family="Consolas,monospace" font-size="12.5" fill="#ce9178">"BSc (Hons) Computer Science"</text>
 
-  <rect x="136" y="122" width="95" height="22" rx="11" fill="#1e1b4b"/>
-  <text x="146" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a78bfa">Full-Stack</text>
+  <!-- ====== LINE 6 ====== y=172 -->
+  <text x="10" y="172" font-family="Consolas,monospace" font-size="11.5" fill="#858585">6</text>
+  <text x="48" y="172" font-family="Consolas,monospace" font-size="12.5" fill="#9cdcfe">    location  </text>
+  <text x="164" y="172" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">= </text>
+  <text x="181" y="172" font-family="Consolas,monospace" font-size="12.5" fill="#ce9178">"Sri Lanka 🇱🇰"</text>
 
-  <rect x="239" y="122" width="90" height="22" rx="11" fill="#0d1f12"/>
-  <text x="249" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#3fb950">Backend</text>
+  <!-- ====== LINE 7 (empty) ====== y=194 -->
+  <text x="10" y="194" font-family="Consolas,monospace" font-size="11.5" fill="#858585">7</text>
 
-  <!-- Status pill (green glowing) -->
-  <rect x="337" y="122" width="135" height="22" rx="11" fill="#0f2a1a"/>
-  <text x="347" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#3fb950">&#x2713; Open to Internships</text>
+  <!-- ====== LINE 8 ====== y=216 -->
+  <text x="10" y="216" font-family="Consolas,monospace" font-size="11.5" fill="#858585">8</text>
+  <text x="48" y="216" font-family="Consolas,monospace" font-size="12.5" fill="#9cdcfe">    skills    </text>
+  <text x="164" y="216" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">= [</text>
+  <text x="195" y="216" font-family="Consolas,monospace" font-size="12.5" fill="#ce9178">"AI/ML"</text>
+  <text x="250" y="216" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">, </text>
+  <text x="265" y="216" font-family="Consolas,monospace" font-size="12.5" fill="#ce9178">"Full-Stack"</text>
+  <text x="345" y="216" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">, </text>
+  <text x="360" y="216" font-family="Consolas,monospace" font-size="12.5" fill="#ce9178">"Backend"</text>
+  <text x="421" y="216" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">]</text>
 
-  <!-- Divider -->
-  <line x1="38" y1="158" x2="478" y2="158" stroke="#21262d" stroke-width="1"/>
+  <!-- ====== LINE 9 ====== y=238 -->
+  <text x="10" y="238" font-family="Consolas,monospace" font-size="11.5" fill="#858585">9</text>
+  <text x="48" y="238" font-family="Consolas,monospace" font-size="12.5" fill="#9cdcfe">    status    </text>
+  <text x="164" y="238" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">= </text>
+  <text x="181" y="238" font-family="Consolas,monospace" font-size="12.5" fill="#3fb950">"Open to Internships ✓"</text>
 
-  <!-- Section: Currently Building -->
-  <text x="38" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="10" letter-spacing="1.5" fill="#6e7681">CURRENTLY BUILDING</text>
+  <!-- ====== LINE 10 ====== y=260 -->
+  <text x="6" y="260" font-family="Consolas,monospace" font-size="11.5" fill="#858585">10</text>
+  <text x="48" y="260" font-family="Consolas,monospace" font-size="12.5" fill="#9cdcfe">    portfolio </text>
+  <text x="164" y="260" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">= </text>
+  <text x="181" y="260" font-family="Consolas,monospace" font-size="12.5" fill="#569cd6">"sihanudayaratna.vercel.app"</text>
 
-  <rect x="38" y="185" width="135" height="24" rx="12" fill="#0d2137"/>
-  <text x="48" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#58a6ff">&#x25B8; DebugMind AI</text>
+  <!-- ====== LINE 11 (closing) ====== y=282 -->
+  <text x="6" y="282" font-family="Consolas,monospace" font-size="11.5" fill="#858585">11</text>
+  <text x="48" y="282" font-family="Consolas,monospace" font-size="12.5" fill="#569cd6">class </text>
+  <text x="91" y="282" font-family="Consolas,monospace" font-size="12.5" fill="#4ec9b0">Developer</text>
+  <text x="157" y="282" font-family="Consolas,monospace" font-size="12.5" fill="#d4d4d4">()</text>
 
-  <rect x="182" y="185" width="130" height="24" rx="12" fill="#1e1b4b"/>
-  <text x="192" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a78bfa">&#x25B8; AI/ML Research</text>
-
-  <rect x="322" y="185" width="120" height="24" rx="12" fill="#0d1f12"/>
-  <text x="332" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#3fb950">&#x25B8; Open Source</text>
-
-  <!-- Divider -->
-  <line x1="38" y1="224" x2="478" y2="224" stroke="#21262d" stroke-width="1"/>
-
-  <!-- Portfolio & GitHub links -->
-  <text x="38" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#58a6ff">&#x1F310; sihanudayaratna.vercel.app</text>
-  <text x="38" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6e7681">&#x1F4BB; github.com/SihanUdayaratna03</text>
+  <!-- Bottom status bar -->
+  <rect x="0" y="300" width="530" height="20" rx="5" fill="#007acc"/>
+  <rect x="0" y="294" width="530" height="6" fill="#007acc"/>
+  <text x="10" y="314" font-family="Consolas,monospace" font-size="10.5" fill="#ffffff">Python 3.11  |  UTF-8  |  Ln 11  |  github.com/SihanUdayaratna03</text>
 </svg>
