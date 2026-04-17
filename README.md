@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://i.pinimg.com/originals/ce/1f/28/ce1f28b0ebc90533df01eb0f99333a39.gif" alt="Banner" width="100%"/>
   <br/>
-  <h1><samp>Welcome to my dungeon</samp></h1>
+  <h1><samp>Welcome to my Github</samp></h1>
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Computer+Science+Undergraduate;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast" alt="Typing SVG" />
   </a>
@@ -9,7 +9,7 @@
 
 ---
 
-### 🕵️ System Status: About Me
+### System Status: About Me
 
 <table>
   <tr>
@@ -27,7 +27,7 @@ Portfolio  : <a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel
     </td>
     <td width="40%">
       <div align="center">
-        <img src="https://user-images.githubusercontent.com/73097560/115834471-27466100-a42f-11eb-9bc3-066c61f21ab2.gif" alt="Developer Illustration" width="90%" />
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2025/08/github_logo_invertocat_dark_5-1152x648-1754938613.jpeg" alt="GitHub Logo" width="90%" style="border-radius: 10px;" />
       </div>
     </td>
   </tr>
@@ -35,7 +35,7 @@ Portfolio  : <a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel
 
 ---
 
-### 🧠 Core Processor (Languages & Tools)
+### Core Processor (Languages & Tools)
 
 <div align="center">
   <a href="https://skillicons.dev">
@@ -50,7 +50,7 @@ Portfolio  : <a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel
 
 ---
 
-### 📈 Contribution Analytics
+### Contribution Analytics
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SihanUdayaratna03&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="100%" />
@@ -58,7 +58,7 @@ Portfolio  : <a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel
 
 ---
 
-### 📊 Network Activity & Stats
+### Network Activity & Stats
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=SihanUdayaratna03&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
