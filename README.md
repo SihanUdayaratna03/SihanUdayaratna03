@@ -1,6 +1,10 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,5,8,38BDF8&height=220&section=header&text=Sihan%20Udayaratna&fontSize=50&fontColor=ffffff&desc=Undergraduate%20|%20Builder%20|%20AI%20Enthusiast&descSize=20&descColor=dddddd&animation=twinkling" alt="Sihan Udayaratna Banner" width="100%"/>
-  <br/><br/>
+  <br/>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Computer+Science+Undergraduate;Full-Stack+Developer;AI+%26+Machine+Learning+Enthusiast" alt="Typing SVG" />
+  </a>
+  <br/>
   <a href="https://github.com/SihanUdayaratna03">
     <img src="https://img.shields.io/badge/PROFILE_VIEWS-188-0d1117?style=for-the-badge&logoColor=white&color=38BDF8" alt="Profile Views"/>
   </a>
@@ -19,16 +23,20 @@
 <table>
   <tr>
     <td width="60%">
-<pre><code>whoami
+
+```yaml
+Welcome
 ------------------------------------------------
-Name       : Sihan Udayaratna
-Role       : Computer Science Undergraduate
-Location   : Sri Lanka
+Name       : "Sihan Udayaratna"
+Role       : "Computer Science Undergraduate"
+Location   : "Sri Lanka"
 Interests  : 
-  - AI & Machine Learning
-  - Backend Development
-  - Full-Stack & Mobile Dev
-Portfolio  : <a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel.app</a></code></pre>
+  - "AI & Machine Learning"
+  - "Backend Development"
+  - "Full-Stack & Mobile Dev"
+Portfolio  : "sihanudayaratna.vercel.app"
+```
+
     </td>
     <td width="40%">
       <div align="center">
@@ -77,5 +85,5 @@ Portfolio  : <a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel
 <br />
 
 <div align="center">
-  <img src="https://profile-counter.glitch.me/SihanUdayaratna03/count.svg" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=SihanUdayaratna03&color=38BDF8&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 </div>
