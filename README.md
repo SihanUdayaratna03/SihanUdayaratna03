@@ -22,32 +22,14 @@
 
 <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" align="right" width="340" />
 
-![](https://img.shields.io/badge/%F0%9F%91%A4%20Name-Sihan%20Udayaratna-4FC3F7?style=flat-square&labelColor=1a1a2e)&nbsp;
-![](https://img.shields.io/badge/%F0%9F%8E%93%20Degree-BSc%20Computer%20Science-29B6F6?style=flat-square&labelColor=1a1a2e)
+<img src="./about-card.svg" width="490" />
 
-![](https://img.shields.io/badge/%F0%9F%8F%9B%EF%B8%8F%20University-SLIIT%20Sri%20Lanka-0288D1?style=flat-square&labelColor=1a1a2e)&nbsp;
-![](https://img.shields.io/badge/%F0%9F%93%8D%20Location-Sri%20Lanka-01579B?style=flat-square&labelColor=1a1a2e)
-
-![](https://img.shields.io/badge/%F0%9F%92%BC%20Status-Open%20to%20Internships-2ea043?style=flat-square&labelColor=1a1a2e)&nbsp;
-![](https://img.shields.io/badge/%F0%9F%8C%90%20Portfolio-sihanudayaratna.vercel.app-7C3AED?style=flat-square&labelColor=1a1a2e)
-
-<br/>
-
-> *"I build things that matter — from intelligent AI tools to full-stack products."*
-
-A passionate CS undergraduate driven by curiosity and creativity. I thrive at the intersection of **Artificial Intelligence**, **Backend Engineering**, and **Modern Web Development** — turning complex problems into clean, scalable software.
-
-**What I'm working on:**
-
-```
-  ▸  DebugMind AI       —  Intelligent debugging assistant
-  ▸  AI/ML Research     —  Exploring adaptive systems
-  ▸  Open Source        —  Contributing & collaborating
-```
+<br clear="both"/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-2ea043?style=for-the-badge&logo=vercel&logoColor=white)](https://sihanudayaratna.vercel.app)&nbsp;[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sihan-udayaratna)
 
-<br clear="both"/>
+<br/>
+
 
 
 

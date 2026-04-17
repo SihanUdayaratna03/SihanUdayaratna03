@@ -1,0 +1,79 @@
+<svg width="500" height="290" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1E90FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E90FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="500" height="290" rx="14" fill="url(#bgGrad)" stroke="#21262d" stroke-width="1.5"/>
+
+  <!-- Top gradient accent bar -->
+  <rect width="500" height="4" rx="2" fill="url(#accentBar)"/>
+
+  <!-- Left vertical accent line -->
+  <rect x="18" y="18" width="3" height="254" rx="1.5" fill="url(#accentBar)"/>
+
+  <!-- Name -->
+  <text x="38" y="50" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="url(#nameGrad)">Sihan Udayaratna</text>
+
+  <!-- Role pill -->
+  <rect x="38" y="60" width="215" height="22" rx="11" fill="#1c2a3a"/>
+  <text x="48" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#58a6ff">&#x1F393; CS Undergraduate · SLIIT</text>
+
+  <!-- Location pill -->
+  <rect x="262" y="60" width="110" height="22" rx="11" fill="#1a1a2e"/>
+  <text x="272" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#a78bfa">&#x1F4CD; Sri Lanka</text>
+
+  <!-- Divider line -->
+  <line x1="38" y1="95" x2="478" y2="95" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Section: Focus label -->
+  <text x="38" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="10" letter-spacing="1.5" fill="#6e7681">FOCUS AREAS</text>
+
+  <!-- Focus chips -->
+  <rect x="38" y="122" width="90" height="22" rx="11" fill="#0d2137"/>
+  <text x="48" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#38bdf8">AI / ML</text>
+
+  <rect x="136" y="122" width="95" height="22" rx="11" fill="#1e1b4b"/>
+  <text x="146" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a78bfa">Full-Stack</text>
+
+  <rect x="239" y="122" width="90" height="22" rx="11" fill="#0d1f12"/>
+  <text x="249" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#3fb950">Backend</text>
+
+  <!-- Status pill (green glowing) -->
+  <rect x="337" y="122" width="135" height="22" rx="11" fill="#0f2a1a"/>
+  <text x="347" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#3fb950">&#x2713; Open to Internships</text>
+
+  <!-- Divider -->
+  <line x1="38" y1="158" x2="478" y2="158" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Section: Currently Building -->
+  <text x="38" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="10" letter-spacing="1.5" fill="#6e7681">CURRENTLY BUILDING</text>
+
+  <rect x="38" y="185" width="135" height="24" rx="12" fill="#0d2137"/>
+  <text x="48" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#58a6ff">&#x25B8; DebugMind AI</text>
+
+  <rect x="182" y="185" width="130" height="24" rx="12" fill="#1e1b4b"/>
+  <text x="192" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a78bfa">&#x25B8; AI/ML Research</text>
+
+  <rect x="322" y="185" width="120" height="24" rx="12" fill="#0d1f12"/>
+  <text x="332" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#3fb950">&#x25B8; Open Source</text>
+
+  <!-- Divider -->
+  <line x1="38" y1="224" x2="478" y2="224" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Portfolio & GitHub links -->
+  <text x="38" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#58a6ff">&#x1F310; sihanudayaratna.vercel.app</text>
+  <text x="38" y="272" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6e7681">&#x1F4BB; github.com/SihanUdayaratna03</text>
+</svg>
