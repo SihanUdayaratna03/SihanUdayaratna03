@@ -18,27 +18,28 @@
 
 <br/>
 
-### System Status: About Me
+### About Me
 
-<div>
-  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" alt="Live Coding" align="right" width="380"/>
+<img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" align="right" width="360"/>
 
-```yaml
-Welcome
-------------------------------------------------
-Name       : "Sihan Udayaratna"
-Role       : "Computer Science Undergraduate"
-Location   : "Sri Lanka"
-Interests  :
-  - "AI & Machine Learning"
-  - "Backend Development"
-  - "Full-Stack & Mobile Dev"
-Portfolio  : "sihanudayaratna.vercel.app"
-```
+![](https://img.shields.io/badge/Name-Sihan%20Udayaratna-1E90FF?style=flat-square&labelColor=0d1117)
+![](https://img.shields.io/badge/Role-CS%20Undergraduate-1E90FF?style=flat-square&labelColor=0d1117)
+![](https://img.shields.io/badge/University-SLIIT-1E90FF?style=flat-square&labelColor=0d1117)
+![](https://img.shields.io/badge/Location-Sri%20Lanka%20%F0%9F%87%B1%F0%9F%87%B0-1E90FF?style=flat-square&labelColor=0d1117)
 
-</div>
+**I'm a passionate CS undergraduate who loves building things that matter.**
+I specialize in **Full-Stack Web Development** and **AI/ML applications**, with hands-on experience crafting scalable backends and polished frontends.
+
+- Building **DebugMind AI** — an intelligent debugging assistant
+- Exploring **Machine Learning** and backend architectures
+- Always open to **collaborations and internships**
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-sihanudayaratna.vercel.app-2ea043?style=for-the-badge&logo=vercel&logoColor=white)](https://sihanudayaratna.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sihan--udayaratna-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sihan-udayaratna)
+[![GitHub](https://img.shields.io/badge/GitHub-SihanUdayaratna03-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SihanUdayaratna03)
 
 <br clear="both"/>
+
 
 ---
 
