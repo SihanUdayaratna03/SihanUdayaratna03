@@ -20,25 +20,38 @@
 
 ### About Me
 
-<img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" align="right" width="360"/>
+<table>
+<tr>
+<td valign="top" width="58%">
 
-![](https://img.shields.io/badge/Name-Sihan%20Udayaratna-1E90FF?style=flat-square&labelColor=0d1117)
-![](https://img.shields.io/badge/Role-CS%20Undergraduate-1E90FF?style=flat-square&labelColor=0d1117)
-![](https://img.shields.io/badge/University-SLIIT-1E90FF?style=flat-square&labelColor=0d1117)
-![](https://img.shields.io/badge/Location-Sri%20Lanka%20%F0%9F%87%B1%F0%9F%87%B0-1E90FF?style=flat-square&labelColor=0d1117)
+<h3>Hi there, I'm Sihan Udayaratna</h3>
 
-**I'm a passionate CS undergraduate who loves building things that matter.**
-I specialize in **Full-Stack Web Development** and **AI/ML applications**, with hands-on experience crafting scalable backends and polished frontends.
+<p>A Computer Science undergraduate from Sri Lanka, driven by a deep curiosity for building systems that are both intelligent and impactful. I thrive at the intersection of <strong>AI</strong>, <strong>backend engineering</strong>, and <strong>modern web development</strong>.</p>
 
-- Building **DebugMind AI** — an intelligent debugging assistant
-- Exploring **Machine Learning** and backend architectures
-- Always open to **collaborations and internships**
+<p>I enjoy transforming complex ideas into clean, working software — whether it's an AI debugging assistant, a REST API, or a full product from scratch.</p>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-sihanudayaratna.vercel.app-2ea043?style=for-the-badge&logo=vercel&logoColor=white)](https://sihanudayaratna.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-sihan--udayaratna-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sihan-udayaratna)
-[![GitHub](https://img.shields.io/badge/GitHub-SihanUdayaratna03-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SihanUdayaratna03)
+<br/>
 
-<br clear="both"/>
+<table>
+<tr><td><strong>Degree</strong></td><td>BSc (Hons) Computer Science</td></tr>
+<tr><td><strong>University</strong></td><td>SLIIT, Sri Lanka</td></tr>
+<tr><td><strong>Focus Areas</strong></td><td>AI/ML &nbsp;·&nbsp; Full-Stack &nbsp;·&nbsp; Backend</td></tr>
+<tr><td><strong>Status</strong></td><td>Open to Internships &amp; Collabs</td></tr>
+<tr><td><strong>Portfolio</strong></td><td><a href="https://sihanudayaratna.vercel.app">sihanudayaratna.vercel.app</a></td></tr>
+</table>
+
+<br/>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-2ea043?style=for-the-badge&logo=vercel&logoColor=white)](https://sihanudayaratna.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sihan-udayaratna)
+
+</td>
+<td valign="top" width="42%" align="center">
+<img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="100%"/>
+</td>
+</tr>
+</table>
+
 
 
 ---
