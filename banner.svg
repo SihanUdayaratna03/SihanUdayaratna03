@@ -1,128 +1,170 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="100%">
-    <defs>
-        <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-            <stop offset="0%" stop-color="#0a0a0c" />
-            <stop offset="100%" stop-color="#000000" />
-        </radialGradient>
-        
-        <style>
-            /* Base traces: faint and elegant */
-            .trace { fill: none; stroke: #27272a; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-            .node { fill: #000000; stroke: #27272a; stroke-width: 1.5; }
-            
-            @keyframes flow {
-                0% { stroke-dashoffset: 800; }
-                100% { stroke-dashoffset: -800; }
-            }
-            /* Data streaks: bright glowing blue */
-            .data {
-                fill: none; stroke: #0ea5e9; stroke-width: 2;
-                stroke-dasharray: 40 400;
-                stroke-linecap: round;
-                animation: flow linear infinite;
-            }
-            .data-slow {
-                fill: none; stroke: #6366f1; stroke-width: 2;
-                stroke-dasharray: 30 500;
-                stroke-linecap: round;
-                animation: flow linear infinite;
-            }
-        </style>
-    </defs>
-    
-    <!-- Background -->
-    <rect width="1000" height="300" fill="url(#bg)" />
-    
-    <g>
-        <path class="trace" d="M -10 30 H 100 L 150 80 H 300" />
-        <circle class="node" cx="300" cy="80" r="3" />
-        <path class="data-slow" d="M -10 30 H 100 L 150 80 H 300" style="animation-duration: 3.4s;" />
-        <path class="trace" d="M -10 45 H 100 L 150 95 H 315" />
-        <circle class="node" cx="315" cy="95" r="3" />
-        <path class="trace" d="M -10 60 H 100 L 150 110 H 330" />
-        <circle class="node" cx="330" cy="110" r="3" />
-        <path class="data-slow" d="M -10 60 H 100 L 150 110 H 330" style="animation-duration: 3.5s;" />
-        <path class="trace" d="M -10 75 H 100 L 150 125 H 345" />
-        <circle class="node" cx="345" cy="125" r="3" />
-        <path class="data" d="M -10 75 H 100 L 150 125 H 345" style="animation-duration: 4.1s;" />
-        <path class="trace" d="M -10 130 H 160 L 200 90 H 290" />
-        <circle class="node" cx="290" cy="90" r="3" />
-        <path class="data" d="M -10 130 H 160 L 200 90 H 290" style="animation-duration: 3.8s;" />
-        <path class="trace" d="M -10 145 H 160 L 200 105 H 275" />
-        <circle class="node" cx="275" cy="105" r="3" />
-        <path class="trace" d="M -10 160 H 160 L 200 120 H 260" />
-        <circle class="node" cx="260" cy="120" r="3" />
-        <path class="data-slow" d="M -10 160 H 160 L 200 120 H 260" style="animation-duration: 3.7s;" />
-        <path class="trace" d="M -10 220 H 120 L 170 170 H 290" />
-        <circle class="node" cx="290" cy="170" r="3" />
-        <path class="data" d="M -10 220 H 120 L 170 170 H 290" style="animation-duration: 3.3s;" />
-        <path class="trace" d="M -10 235 H 120 L 170 185 H 275" />
-        <circle class="node" cx="275" cy="185" r="3" />
-        <path class="data" d="M -10 235 H 120 L 170 185 H 275" style="animation-duration: 3.7s;" />
-        <path class="trace" d="M -10 250 H 120 L 170 200 H 260" />
-        <circle class="node" cx="260" cy="200" r="3" />
-        <path class="data" d="M -10 250 H 120 L 170 200 H 260" style="animation-duration: 4.5s;" />
-        <path class="trace" d="M -10 265 H 120 L 170 215 H 245" />
-        <circle class="node" cx="245" cy="215" r="3" />
-        <path class="data-slow" d="M -10 265 H 120 L 170 215 H 245" style="animation-duration: 3.5s;" />
-        <path class="trace" d="M -10 260 H 60 L 90 230 H 270" />
-        <circle class="node" cx="270" cy="230" r="3" />
-        <path class="trace" d="M -10 275 H 60 L 90 245 H 255" />
-        <circle class="node" cx="255" cy="245" r="3" />
-        <path class="data" d="M -10 275 H 60 L 90 245 H 255" style="animation-duration: 4.1s;" />
-        <path class="trace" d="M 1010 20 H 900 L 840 80 H 700" />
-        <circle class="node" cx="700" cy="80" r="3" />
-        <path class="data" d="M 1010 20 H 900 L 840 80 H 700" style="animation-duration: 4.2s;" />
-        <path class="trace" d="M 1010 35 H 900 L 840 95 H 685" />
-        <circle class="node" cx="685" cy="95" r="3" />
-        <path class="data" d="M 1010 35 H 900 L 840 95 H 685" style="animation-duration: 3.4s;" />
-        <path class="trace" d="M 1010 50 H 900 L 840 110 H 670" />
-        <circle class="node" cx="670" cy="110" r="3" />
-        <path class="trace" d="M 1010 100 H 850 L 800 150 H 690" />
-        <circle class="node" cx="690" cy="150" r="3" />
-        <path class="data" d="M 1010 100 H 850 L 800 150 H 690" style="animation-duration: 4.2s;" />
-        <path class="trace" d="M 1010 115 H 850 L 800 165 H 675" />
-        <circle class="node" cx="675" cy="165" r="3" />
-        <path class="data-slow" d="M 1010 115 H 850 L 800 165 H 675" style="animation-duration: 4.3s;" />
-        <path class="trace" d="M 1010 130 H 850 L 800 180 H 660" />
-        <circle class="node" cx="660" cy="180" r="3" />
-        <path class="trace" d="M 1010 145 H 850 L 800 195 H 645" />
-        <circle class="node" cx="645" cy="195" r="3" />
-        <path class="data-slow" d="M 1010 145 H 850 L 800 195 H 645" style="animation-duration: 4.6s;" />
-        <path class="trace" d="M 1010 180 H 800 L 760 140 H 600" />
-        <circle class="node" cx="600" cy="140" r="3" />
-        <path class="data-slow" d="M 1010 180 H 800 L 760 140 H 600" style="animation-duration: 3.2s;" />
-        <path class="trace" d="M 1010 195 H 800 L 760 155 H 615" />
-        <circle class="node" cx="615" cy="155" r="3" />
-        <path class="trace" d="M 1010 210 H 800 L 760 170 H 630" />
-        <circle class="node" cx="630" cy="170" r="3" />
-        <path class="data-slow" d="M 1010 210 H 800 L 760 170 H 630" style="animation-duration: 4.0s;" />
-        <path class="trace" d="M 1010 240 H 880 L 830 190 H 730" />
-        <circle class="node" cx="730" cy="190" r="3" />
-        <path class="data-slow" d="M 1010 240 H 880 L 830 190 H 730" style="animation-duration: 3.1s;" />
-        <path class="trace" d="M 1010 255 H 880 L 830 205 H 745" />
-        <circle class="node" cx="745" cy="205" r="3" />
-        <path class="trace" d="M 1010 270 H 880 L 830 220 H 760" />
-        <circle class="node" cx="760" cy="220" r="3" />
-        <path class="data-slow" d="M 1010 270 H 880 L 830 220 H 760" style="animation-duration: 4.5s;" />
-        <path class="trace" d="M 1010 285 H 880 L 830 235 H 775" />
-        <circle class="node" cx="775" cy="235" r="3" />
-        <path class="data-slow" d="M 1010 285 H 880 L 830 235 H 775" style="animation-duration: 4.8s;" />
-        <path class="trace" d="M -10 110 H 260" />
-        <circle class="node" cx="260" cy="110" r="3" />
-        <path class="data" d="M -10 110 H 260" style="animation-duration: 4.2s;" />
-        <path class="trace" d="M -10 190 H 320" />
-        <circle class="node" cx="320" cy="190" r="3" />
-        <path class="data-slow" d="M -10 190 H 320" style="animation-duration: 3.8s;" />
-        <path class="trace" d="M 1010 160 H 700" />
-        <circle class="node" cx="700" cy="160" r="3" />
-        <path class="trace" d="M 1010 220 H 750" />
-        <circle class="node" cx="750" cy="220" r="3" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300">
+  <defs>
+    <!-- Deep dark background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060912"/>
+      <stop offset="100%" stop-color="#0b0d1a"/>
+    </linearGradient>
 
-    </g>
-    
-    <g transform="translate(500, 145)">
-        <text x="0" y="-5" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="6">SIHAN UDAYARATNA</text>
-        <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#a1a1aa" text-anchor="middle" letter-spacing="10">AI &amp; MACHINE LEARNING ENGINEER</text>
-    </g>
+    <!-- Active trace gradient (blue to indigo) -->
+    <linearGradient id="trace-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+
+    <!-- Text gradient -->
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Horizontal data packet animation -->
+    <style>
+      @keyframes ltr { from { stroke-dashoffset: 600; } to { stroke-dashoffset: -600; } }
+      @keyframes rtl { from { stroke-dashoffset: -600; } to { stroke-dashoffset: 600; } }
+      @keyframes pulse { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.9; } }
+      @keyframes blink { 0%, 100% { opacity: 0.2; } 50% { opacity: 1; } }
+      
+      .t { fill: none; stroke: #1e2d4a; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+      .n { fill: #060912; stroke: #1e2d4a; stroke-width: 1.5; }
+      .n-active { fill: #0ea5e9; }
+      
+      .d1 { fill:none; stroke:#38bdf8; stroke-width:2; stroke-linecap:round; stroke-dasharray:20 600; animation: ltr 3.2s linear infinite; }
+      .d2 { fill:none; stroke:#818cf8; stroke-width:2; stroke-linecap:round; stroke-dasharray:15 600; animation: ltr 4.5s linear infinite; }
+      .d3 { fill:none; stroke:#38bdf8; stroke-width:2; stroke-linecap:round; stroke-dasharray:20 600; animation: rtl 3.8s linear infinite; }
+      .d4 { fill:none; stroke:#818cf8; stroke-width:2; stroke-linecap:round; stroke-dasharray:12 600; animation: rtl 5.1s linear infinite; }
+      .d5 { fill:none; stroke:#38bdf8; stroke-width:2; stroke-linecap:round; stroke-dasharray:18 600; animation: ltr 2.9s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="300" fill="url(#bg)"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  LEFT SIDE CIRCUIT BLOCK                    -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Bus cluster 1: top-left angling down -->
+  <path class="t" d="M0,45 H90 L140,95 H220"/>
+  <path class="t" d="M0,58 H80 L130,108 H200"/>
+  <path class="t" d="M0,71 H70 L120,121 H195"/>
+  <path class="t" d="M0,84 H60 L110,134 H188"/>
+
+  <!-- Bus cluster 2: middle-left going straight then up -->
+  <path class="t" d="M0,155 H100 L145,110 H230"/>
+  <path class="t" d="M0,168 H95 L140,123 H215"/>
+  <path class="t" d="M0,181 H90 L135,136 H210"/>
+
+  <!-- Bus cluster 3: bottom-left angling up -->
+  <path class="t" d="M0,240 H110 L150,200 H240"/>
+  <path class="t" d="M0,253 H105 L145,213 H235"/>
+  <path class="t" d="M0,266 H100 L140,226 H230"/>
+
+  <!-- Active data packets LEFT -->
+  <path class="d1" d="M0,45 H90 L140,95 H220"/>
+  <path class="d2" d="M0,168 H95 L140,123 H215"/>
+  <path class="d5" d="M0,253 H105 L145,213 H235"/>
+
+  <!-- Endpoint nodes LEFT -->
+  <circle class="n" cx="220" cy="95" r="4"/>
+  <circle class="n" cx="200" cy="108" r="4"/>
+  <circle class="n" cx="195" cy="121" r="4"/>
+  <circle class="n" cx="188" cy="134" r="4"/>
+  <circle class="n" cx="230" cy="110" r="4"/>
+  <circle class="n" cx="215" cy="123" r="4"/>
+  <circle class="n" cx="210" cy="136" r="4"/>
+  <circle class="n" cx="240" cy="200" r="4"/>
+  <circle class="n" cx="235" cy="213" r="4"/>
+  <circle class="n" cx="230" cy="226" r="4"/>
+
+  <!-- Active endpoint nodes (glowing) -->
+  <circle cx="220" cy="95" r="3" fill="#38bdf8"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite"/></circle>
+  <circle cx="215" cy="123" r="3" fill="#818cf8"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" repeatCount="indefinite"/></circle>
+  <circle cx="235" cy="213" r="3" fill="#38bdf8"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></circle>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  RIGHT SIDE CIRCUIT BLOCK                   -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Bus cluster 1: top-right angling down -->
+  <path class="t" d="M1000,35 H910 L860,85 H780"/>
+  <path class="t" d="M1000,48 H920 L870,98 H800"/>
+  <path class="t" d="M1000,61 H930 L880,111 H810"/>
+  <path class="t" d="M1000,74 H940 L890,124 H820"/>
+
+  <!-- Bus cluster 2: middle-right straight then down -->
+  <path class="t" d="M1000,160 H900 L855,115 H770"/>
+  <path class="t" d="M1000,173 H905 L860,128 H785"/>
+  <path class="t" d="M1000,186 H910 L865,141 H790"/>
+
+  <!-- Bus cluster 3: bottom-right angling up -->
+  <path class="t" d="M1000,235 H890 L850,195 H760"/>
+  <path class="t" d="M1000,248 H895 L855,208 H765"/>
+  <path class="t" d="M1000,261 H900 L860,221 H770"/>
+
+  <!-- Active data packets RIGHT -->
+  <path class="d3" d="M1000,48 H920 L870,98 H800"/>
+  <path class="d4" d="M1000,173 H905 L860,128 H785"/>
+  <path class="d3" d="M1000,248 H895 L855,208 H765"/>
+
+  <!-- Endpoint nodes RIGHT -->
+  <circle class="n" cx="780" cy="85" r="4"/>
+  <circle class="n" cx="800" cy="98" r="4"/>
+  <circle class="n" cx="810" cy="111" r="4"/>
+  <circle class="n" cx="820" cy="124" r="4"/>
+  <circle class="n" cx="770" cy="115" r="4"/>
+  <circle class="n" cx="785" cy="128" r="4"/>
+  <circle class="n" cx="790" cy="141" r="4"/>
+  <circle class="n" cx="760" cy="195" r="4"/>
+  <circle class="n" cx="765" cy="208" r="4"/>
+  <circle class="n" cx="770" cy="221" r="4"/>
+
+  <!-- Active endpoint nodes (glowing) -->
+  <circle cx="800" cy="98" r="3" fill="#38bdf8"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+  <circle cx="785" cy="128" r="3" fill="#818cf8"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite"/></circle>
+  <circle cx="765" cy="208" r="3" fill="#38bdf8"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  HORIZONTAL ACCENT LINES                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <path class="t" d="M0,130 H260"/>
+  <path class="t" d="M740,130 H1000"/>
+  <path class="t" d="M0,170 H260"/>
+  <path class="t" d="M740,170 H1000"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  SLIM TOP & BOTTOM EDGE ACCENT LINES        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <line x1="0" y1="0" x2="1000" y2="0" stroke="#0ea5e9" stroke-width="2" opacity="0.6"/>
+  <line x1="0" y1="299" x2="1000" y2="299" stroke="#818cf8" stroke-width="2" opacity="0.6"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  CENTRAL TEXT AREA                          -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Subtle vertical separator lines -->
+  <line x1="285" y1="80" x2="285" y2="220" stroke="#1e2d4a" stroke-width="1"/>
+  <line x1="715" y1="80" x2="715" y2="220" stroke="#1e2d4a" stroke-width="1"/>
+
+  <!-- Corner bracket accents (top-left and bottom-right of text area) -->
+  <path d="M295,88 H310 V103" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.8"/>
+  <path d="M705,88 H690 V103" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.8"/>
+  <path d="M295,212 H310 V197" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.8"/>
+  <path d="M705,212 H690 V197" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Name -->
+  <text x="500" y="150" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="44" font-weight="800" letter-spacing="5"
+        fill="url(#text-grad)">SIHAN UDAYARATNA</text>
+
+  <!-- Subtitle divider -->
+  <line x1="340" y1="168" x2="660" y2="168" stroke="#1e2d4a" stroke-width="1"/>
+
+  <!-- Role subtitle -->
+  <text x="500" y="190" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="12" font-weight="500" letter-spacing="5"
+        fill="#475569">AI &amp; MACHINE LEARNING ENGINEER</text>
 </svg>
