@@ -1,83 +1,158 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="100%">
   <defs>
-    <!-- Deep Space Black Base -->
+    <!-- Background -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#000000" />
-      <stop offset="100%" stop-color="#09090b" />
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
 
-    <!-- Aurora Blur Filter for Fluid Gradients -->
-    <filter id="aurora" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="70" result="blur" />
+    <!-- Glowing Cyan -->
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- CPU Box Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Deep Glow for Active Circuits -->
+    <filter id="circuit-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <!-- Professional Tech Dot Grid -->
-    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle fill="rgba(255,255,255,0.07)" cx="2" cy="2" r="1"></circle>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.06)" />
+      <path d="M 40 0 L 40 40 L 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
     </pattern>
 
-    <!-- Sleek Line Gradient for the Accent -->
-    <linearGradient id="line-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0" />
-      <stop offset="50%" stop-color="#60a5fa" stop-opacity="1" />
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
-    </linearGradient>
+    <style>
+      .circuit { fill: none; stroke: rgba(56, 189, 248, 0.2); stroke-width: 2; stroke-linejoin: bevel; stroke-linecap: round; }
+      
+      .node { fill: #020617; stroke: rgba(56, 189, 248, 0.4); stroke-width: 1.5; }
+      .node-main { fill: #020617; stroke: #0ea5e9; stroke-width: 2; }
+      .node-pulse { fill: #38bdf8; }
+      
+      @keyframes dash {
+        to { stroke-dashoffset: -1000; }
+      }
+      .circuit-active {
+        fill: none; stroke: #38bdf8; stroke-width: 2.5; stroke-linecap: round;
+        stroke-dasharray: 10 150; stroke-dashoffset: 0;
+        animation: dash 4s linear infinite;
+        filter: url(#circuit-glow);
+      }
+      .circuit-active-slow {
+        fill: none; stroke: #8b5cf6; stroke-width: 2.5; stroke-linecap: round;
+        stroke-dasharray: 15 200; stroke-dashoffset: 0;
+        animation: dash 6s linear infinite;
+        filter: url(#circuit-glow);
+      }
+    </style>
   </defs>
 
-  <!-- Solid Base -->
   <rect width="100%" height="100%" fill="url(#bg)" />
+  <rect width="100%" height="100%" fill="url(#grid)" />
 
-  <!-- Aurora Mesh Gradients (Fluid, cinematic AI aesthetic) -->
-  <g filter="url(#aurora)" opacity="0.65">
-    <!-- Deep Blue Orb -->
-    <circle fill="#2563eb" cx="300" cy="150" r="160">
-      <animate attributeName="cx" values="300; 600; 300" dur="14s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="150; 50; 150" dur="18s" repeatCount="indefinite" />
-    </circle>
-    <!-- Purple Orb -->
-    <circle fill="#7c3aed" cx="700" cy="150" r="150">
-      <animate attributeName="cx" values="700; 400; 700" dur="16s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="150; 250; 150" dur="20s" repeatCount="indefinite" />
-    </circle>
-    <!-- Cyan Orb -->
-    <circle fill="#0891b2" cx="500" cy="50" r="130">
-      <animate attributeName="cx" values="500; 200; 500" dur="15s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="50; 200; 50" dur="12s" repeatCount="indefinite" />
-    </circle>
+  <!-- Background Binary Decor -->
+  <g font-family="monospace" font-size="11" fill="rgba(56, 189, 248, 0.12)" letter-spacing="2">
+    <text x="30" y="40">AI_CORE_INIT: OK</text>
+    <text x="30" y="60">MEM: 0x8F9B2C</text>
+    <text x="30" y="260">SYS.PROCESS(1)</text>
+    
+    <text x="840" y="40">NET_UPLINK: LIVE</text>
+    <text x="840" y="60">BW: 10.4 TB/s</text>
+    <text x="840" y="260">ML_MODEL: V4.2</text>
   </g>
 
-  <!-- Geometric Grid Overlay -->
-  <rect width="100%" height="100%" fill="url(#dots)" />
+  <!-- CPU Box Base -->
+  <rect x="220" y="70" width="560" height="160" fill="#020617" stroke="rgba(14, 165, 233, 0.5)" stroke-width="2" rx="8" />
 
-  <!-- Orbital Rings (Simulating Neural Parameters/AI Models) -->
-  <g stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none">
-    <circle cx="500" cy="150" r="220" stroke-dasharray="1 10">
-      <animateTransform attributeName="transform" type="rotate" from="0 500 150" to="360 500 150" dur="60s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="500" cy="150" r="260" stroke-dasharray="4 20">
-      <animateTransform attributeName="transform" type="rotate" from="360 500 150" to="-360 500 150" dur="80s" repeatCount="indefinite" />
-    </circle>
+  <!-- CPU Pins Top & Bottom -->
+  <line x1="240" y1="64" x2="760" y2="64" stroke="rgba(56, 189, 248, 0.6)" stroke-width="6" stroke-dasharray="4 16" />
+  <line x1="240" y1="236" x2="760" y2="236" stroke="rgba(56, 189, 248, 0.6)" stroke-width="6" stroke-dasharray="4 16" />
+  
+  <!-- CPU Pins Left & Right -->
+  <line x1="214" y1="90" x2="214" y2="210" stroke="rgba(56, 189, 248, 0.6)" stroke-width="6" stroke-dasharray="4 16" />
+  <line x1="786" y1="90" x2="786" y2="210" stroke="rgba(56, 189, 248, 0.6)" stroke-width="6" stroke-dasharray="4 16" />
+
+  <!-- Passive Circuits -->
+  <!-- Left Side -->
+  <path class="circuit" d="M -20 100 H 120 V 120 H 210" />
+  <path class="circuit" d="M -20 160 H 150 V 180 H 210" />
+  <path class="circuit" d="M -20 220 H 90 V 200 H 210" />
+  <!-- Top Side -->
+  <path class="circuit" d="M 280 -20 V 40 H 320 V 60" />
+  <path class="circuit" d="M 650 -20 V 50 H 700 V 60" />
+  <!-- Right Side -->
+  <path class="circuit" d="M 1020 90 H 880 V 120 H 790" />
+  <path class="circuit" d="M 1020 150 H 850 V 170 H 790" />
+  <path class="circuit" d="M 1020 210 H 920 V 190 H 790" />
+  <!-- Bottom Side -->
+  <path class="circuit" d="M 350 320 V 270 H 400 V 240" />
+  <path class="circuit" d="M 680 320 V 280 H 620 V 240" />
+
+  <!-- Active Circuit Data Streams -->
+  <path class="circuit-active" d="M -20 100 H 120 V 120 H 210" />
+  <path class="circuit-active-slow" d="M 280 -20 V 40 H 320 V 60" />
+  <path class="circuit-active" d="M 1020 150 H 850 V 170 H 790" />
+  <path class="circuit-active-slow" d="M 680 320 V 280 H 620 V 240" />
+  <path class="circuit-active" d="M -20 220 H 90 V 200 H 210" />
+  <path class="circuit-active-slow" d="M 1020 90 H 880 V 120 H 790" />
+
+  <!-- Circuit Nodes -->
+  <g>
+    <!-- Left -->
+    <circle cx="120" cy="100" r="3" class="node" />
+    <circle cx="120" cy="120" r="3" class="node" />
+    <circle cx="150" cy="160" r="3" class="node" />
+    <circle cx="150" cy="180" r="3" class="node" />
+    <circle cx="90" cy="220" r="3" class="node" />
+    <circle cx="90" cy="200" r="3" class="node" />
+    <!-- Top -->
+    <circle cx="280" cy="40" r="3" class="node" />
+    <circle cx="320" cy="40" r="3" class="node" />
+    <circle cx="650" cy="50" r="3" class="node" />
+    <circle cx="700" cy="50" r="3" class="node" />
+    <!-- Right -->
+    <circle cx="880" cy="90" r="3" class="node" />
+    <circle cx="880" cy="120" r="3" class="node" />
+    <circle cx="850" cy="150" r="3" class="node" />
+    <circle cx="850" cy="170" r="3" class="node" />
+    <circle cx="920" cy="210" r="3" class="node" />
+    <circle cx="920" cy="190" r="3" class="node" />
+    <!-- Bottom -->
+    <circle cx="350" cy="270" r="3" class="node" />
+    <circle cx="400" cy="270" r="3" class="node" />
+    <circle cx="680" cy="280" r="3" class="node" />
+    <circle cx="620" cy="280" r="3" class="node" />
   </g>
 
-  <!-- Precision Crosshairs -->
-  <g stroke="rgba(255,255,255,0.15)" stroke-width="1">
-    <line x1="500" y1="20" x2="500" y2="40" />
-    <line x1="500" y1="260" x2="500" y2="280" />
-    <line x1="20" y1="150" x2="40" y2="150" />
-    <line x1="960" y1="150" x2="980" y2="150" />
+  <!-- Pulsing Activity Core Nodes on the Motherboard -->
+  <g>
+    <circle cx="120" cy="120" r="2" class="node-pulse"><animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="320" cy="40" r="2" class="node-pulse"><animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="170" r="2" class="node-pulse"><animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="280" r="2" class="node-pulse"><animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Typography & Layout -->
+  <!-- Inner CPU Glow Layer (Animated) -->
+  <rect x="220" y="70" width="560" height="160" fill="none" stroke="#0ea5e9" stroke-width="4" rx="8" filter="url(#glow)">
+    <animate attributeName="stroke-opacity" values="0; 0.6; 0" dur="5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Typography -->
   <g transform="translate(500, 150)">
-    <!-- Main Name -->
-    <text x="0" y="-8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="8">SIHAN UDAYARATNA</text>
+    <text x="0" y="-8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="8">SIHAN UDAYARATNA</text>
     
-    <!-- Title -->
-    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle" letter-spacing="12">AI &amp; MACHINE LEARNING ENGINEER</text>
+    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#38bdf8" text-anchor="middle" letter-spacing="12">AI &amp; MACHINE LEARNING ENGINEER</text>
     
-    <!-- Glowing Accent Line under text -->
-    <rect x="-180" y="55" width="360" height="2" fill="url(#line-glow)">
-      <animate attributeName="opacity" values="0.2; 1; 0.2" dur="4s" repeatCount="indefinite" />
+    <!-- Central decorative scanning line -->
+    <rect x="-240" y="55" width="480" height="2" fill="url(#cyan-glow)">
+      <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="4s" repeatCount="indefinite" />
     </rect>
   </g>
 </svg>
