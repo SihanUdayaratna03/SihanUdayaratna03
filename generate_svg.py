@@ -8,25 +8,18 @@ def generate_circuit_svg():
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="100%">
     <defs>
         <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-            <stop offset="0%" stop-color="#111f3d" />
-            <stop offset="100%" stop-color="#070c1a" />
+            <stop offset="0%" stop-color="#142850" />
+            <stop offset="100%" stop-color="#0a1128" />
         </radialGradient>
-        <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="2" result="blur" />
-            <feMerge>
-                <feMergeNode in="blur" />
-                <feMergeNode in="SourceGraphic" />
-            </feMerge>
-        </filter>
         <style>
-            .trace {{ fill: none; stroke: #00ffff; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }}
-            .node {{ fill: #070c1a; stroke: #00ffff; stroke-width: 2.5; }}
+            .trace {{ fill: none; stroke: #00f0ff; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }}
+            .node {{ fill: #0a1128; stroke: #00f0ff; stroke-width: 4; }}
             
             @keyframes flow {{
                 to {{ stroke-dashoffset: -1000; }}
             }}
             .data {{
-                fill: none; stroke: #ffffff; stroke-width: 2.5;
+                fill: none; stroke: #ffffff; stroke-width: 4;
                 stroke-dasharray: 8 180;
                 stroke-linecap: round;
                 animation: flow linear infinite;
@@ -35,7 +28,8 @@ def generate_circuit_svg():
     </defs>
     <rect width="{width}" height="{height}" fill="url(#bg)" />
     
-    <g filter="url(#neon)">
+    <!-- No SVG filters here so GitHub Camo doesn't break it! -->
+    <g>
 '''
     
     paths = []
@@ -69,25 +63,26 @@ def generate_circuit_svg():
                 'x': x_end, 'y': y2
             })
 
-    # Density!
-    add_left_bus(20, 7, 10, 150, 50, 100)
-    add_left_bus(140, 5, 10, 180, -40, 80)
-    add_left_bus(230, 6, 10, 100, -60, 150)
-    add_left_bus(-10, 4, 10, 250, 40, 50)
+    # Density! Matches the image exactly.
+    # spacing = 12 for thicker lines to not overlap
+    add_left_bus(20, 6, 12, 160, 60, 110)
+    add_left_bus(140, 5, 12, 180, -50, 90)
+    add_left_bus(230, 5, 12, 110, -70, 160)
+    add_left_bus(-10, 3, 12, 250, 40, 60)
     
-    add_right_bus(10, 6, 10, 150, 70, 90)
-    add_right_bus(120, 8, 10, 180, -40, 120)
-    add_right_bus(220, 7, 10, 80, -50, 100)
-    add_right_bus(-20, 3, 10, 250, 60, 60)
+    add_right_bus(10, 5, 12, 160, 70, 100)
+    add_right_bus(120, 7, 12, 180, -40, 130)
+    add_right_bus(220, 6, 12, 90, -50, 110)
+    add_right_bus(-20, 3, 12, 250, 60, 70)
 
     # Some pure horizontal lines filling gaps
-    for i in range(4):
-        y = 110 + i * 10
+    for i in range(3):
+        y = 110 + i * 12
         x_end = 350 + random.randint(0, 50)
         paths.append({'d': f"M -10 {y} H {x_end}", 'x': x_end, 'y': y})
         
-    for i in range(4):
-        y = 170 + i * 10
+    for i in range(3):
+        y = 170 + i * 12
         x_end = 650 - random.randint(0, 50)
         paths.append({'d': f"M 1010 {y} H {x_end}", 'x': x_end, 'y': y})
 
@@ -95,10 +90,10 @@ def generate_circuit_svg():
     random.seed(123)
     for p in paths:
         svg += f'        <path class="trace" d="{p["d"]}" />\n'
-        svg += f'        <circle class="node" cx="{p["x"]}" cy="{p["y"]}" r="4.5" />\n'
+        svg += f'        <circle class="node" cx="{p["x"]}" cy="{p["y"]}" r="5.5" />\n'
         
-        # Add glowing data packets to 80% of lines
-        if random.random() > 0.2:
+        # Add glowing data packets to 30% of lines
+        if random.random() > 0.7:
             dur = round(random.uniform(2.5, 4.5), 1)
             svg += f'        <path class="data" d="{p["d"]}" style="animation-duration: {dur}s;" />\n'
 
@@ -107,14 +102,11 @@ def generate_circuit_svg():
     </g>
     
     <!-- Dark overlay behind text so it's readable -->
-    <rect x="250" y="105" width="500" height="90" fill="#070c1a" opacity="0.85" rx="8" />
-    
-    <!-- Central decorative box outline -->
-    <rect x="260" y="115" width="480" height="70" fill="none" stroke="#00ffff" stroke-width="1.5" opacity="0.3" rx="4" />
+    <rect x="230" y="100" width="540" height="100" fill="#0a1128" opacity="0.9" rx="8" />
     
     <g transform="translate(500, 145)">
-        <text x="0" y="-2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">SIHAN UDAYARATNA</text>
-        <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#00ffff" text-anchor="middle" letter-spacing="8">AI &amp; MACHINE LEARNING ENGINEER</text>
+        <text x="0" y="-5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">SIHAN UDAYARATNA</text>
+        <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#00f0ff" text-anchor="middle" letter-spacing="8">AI &amp; MACHINE LEARNING ENGINEER</text>
     </g>
 </svg>
 '''
