@@ -1,158 +1,198 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="100%">
-  <defs>
-    <!-- Background -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020617" />
-      <stop offset="100%" stop-color="#0f172a" />
-    </linearGradient>
-
-    <!-- Glowing Cyan -->
-    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0ea5e9" />
-      <stop offset="100%" stop-color="#3b82f6" />
-    </linearGradient>
-
-    <!-- CPU Box Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
+    <defs>
+        <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="#111f3d" />
+            <stop offset="100%" stop-color="#070c1a" />
+        </radialGradient>
+        <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <style>
+            .trace { fill: none; stroke: #00ffff; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+            .node { fill: #070c1a; stroke: #00ffff; stroke-width: 2.5; }
+            
+            @keyframes flow {
+                to { stroke-dashoffset: -1000; }
+            }
+            .data {
+                fill: none; stroke: #ffffff; stroke-width: 2.5;
+                stroke-dasharray: 8 180;
+                stroke-linecap: round;
+                animation: flow linear infinite;
+            }
+        </style>
+    </defs>
+    <rect width="1000" height="300" fill="url(#bg)" />
     
-    <!-- Deep Glow for Active Circuits -->
-    <filter id="circuit-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
+    <g filter="url(#neon)">
+        <path class="trace" d="M -10 20 H 150 L 200 70 H 315" />
+        <circle class="node" cx="315" cy="70" r="4.5" />
+        <path class="trace" d="M -10 30 H 140 L 190 80 H 306" />
+        <circle class="node" cx="306" cy="80" r="4.5" />
+        <path class="trace" d="M -10 40 H 130 L 180 90 H 299" />
+        <circle class="node" cx="299" cy="90" r="4.5" />
+        <path class="data" d="M -10 40 H 130 L 180 90 H 299" style="animation-duration: 2.7s;" />
+        <path class="trace" d="M -10 50 H 120 L 170 100 H 300" />
+        <circle class="node" cx="300" cy="100" r="4.5" />
+        <path class="data" d="M -10 50 H 120 L 170 100 H 300" style="animation-duration: 2.6s;" />
+        <path class="trace" d="M -10 60 H 110 L 160 110 H 276" />
+        <circle class="node" cx="276" cy="110" r="4.5" />
+        <path class="data" d="M -10 60 H 110 L 160 110 H 276" style="animation-duration: 3.2s;" />
+        <path class="trace" d="M -10 70 H 100 L 150 120 H 255" />
+        <circle class="node" cx="255" cy="120" r="4.5" />
+        <path class="data" d="M -10 70 H 100 L 150 120 H 255" style="animation-duration: 2.8s;" />
+        <path class="trace" d="M -10 80 H 90 L 140 130 H 267" />
+        <circle class="node" cx="267" cy="130" r="4.5" />
+        <path class="data" d="M -10 80 H 90 L 140 130 H 267" style="animation-duration: 3.2s;" />
+        <path class="trace" d="M -10 140 H 180 L 220 100 H 308" />
+        <circle class="node" cx="308" cy="100" r="4.5" />
+        <path class="data" d="M -10 140 H 180 L 220 100 H 308" style="animation-duration: 2.5s;" />
+        <path class="trace" d="M -10 150 H 190 L 230 110 H 336" />
+        <circle class="node" cx="336" cy="110" r="4.5" />
+        <path class="data" d="M -10 150 H 190 L 230 110 H 336" style="animation-duration: 2.7s;" />
+        <path class="trace" d="M -10 160 H 200 L 240 120 H 336" />
+        <circle class="node" cx="336" cy="120" r="4.5" />
+        <path class="data" d="M -10 160 H 200 L 240 120 H 336" style="animation-duration: 2.6s;" />
+        <path class="trace" d="M -10 170 H 210 L 250 130 H 336" />
+        <circle class="node" cx="336" cy="130" r="4.5" />
+        <path class="data" d="M -10 170 H 210 L 250 130 H 336" style="animation-duration: 3.4s;" />
+        <path class="trace" d="M -10 180 H 220 L 260 140 H 350" />
+        <circle class="node" cx="350" cy="140" r="4.5" />
+        <path class="data" d="M -10 180 H 220 L 260 140 H 350" style="animation-duration: 2.7s;" />
+        <path class="trace" d="M -10 230 H 100 L 160 170 H 313" />
+        <circle class="node" cx="313" cy="170" r="4.5" />
+        <path class="trace" d="M -10 240 H 110 L 170 180 H 322" />
+        <circle class="node" cx="322" cy="180" r="4.5" />
+        <path class="data" d="M -10 240 H 110 L 170 180 H 322" style="animation-duration: 2.5s;" />
+        <path class="trace" d="M -10 250 H 120 L 180 190 H 331" />
+        <circle class="node" cx="331" cy="190" r="4.5" />
+        <path class="data" d="M -10 250 H 120 L 180 190 H 331" style="animation-duration: 3.6s;" />
+        <path class="trace" d="M -10 260 H 130 L 190 200 H 367" />
+        <circle class="node" cx="367" cy="200" r="4.5" />
+        <path class="data" d="M -10 260 H 130 L 190 200 H 367" style="animation-duration: 4.2s;" />
+        <path class="trace" d="M -10 270 H 140 L 200 210 H 354" />
+        <circle class="node" cx="354" cy="210" r="4.5" />
+        <path class="data" d="M -10 270 H 140 L 200 210 H 354" style="animation-duration: 3.2s;" />
+        <path class="trace" d="M -10 280 H 150 L 210 220 H 366" />
+        <circle class="node" cx="366" cy="220" r="4.5" />
+        <path class="data" d="M -10 280 H 150 L 210 220 H 366" style="animation-duration: 2.9s;" />
+        <path class="trace" d="M -10 -10 H 250 L 290 30 H 365" />
+        <circle class="node" cx="365" cy="30" r="4.5" />
+        <path class="data" d="M -10 -10 H 250 L 290 30 H 365" style="animation-duration: 3.6s;" />
+        <path class="trace" d="M -10 0 H 240 L 280 40 H 358" />
+        <circle class="node" cx="358" cy="40" r="4.5" />
+        <path class="data" d="M -10 0 H 240 L 280 40 H 358" style="animation-duration: 3.1s;" />
+        <path class="trace" d="M -10 10 H 230 L 270 50 H 336" />
+        <circle class="node" cx="336" cy="50" r="4.5" />
+        <path class="data" d="M -10 10 H 230 L 270 50 H 336" style="animation-duration: 4.0s;" />
+        <path class="trace" d="M -10 20 H 220 L 260 60 H 338" />
+        <circle class="node" cx="338" cy="60" r="4.5" />
+        <path class="data" d="M -10 20 H 220 L 260 60 H 338" style="animation-duration: 3.9s;" />
+        <path class="trace" d="M 1010 10 H 850 L 780 80 H 676" />
+        <circle class="node" cx="676" cy="80" r="4.5" />
+        <path class="data" d="M 1010 10 H 850 L 780 80 H 676" style="animation-duration: 3.8s;" />
+        <path class="trace" d="M 1010 20 H 860 L 790 90 H 694" />
+        <circle class="node" cx="694" cy="90" r="4.5" />
+        <path class="data" d="M 1010 20 H 860 L 790 90 H 694" style="animation-duration: 3.5s;" />
+        <path class="trace" d="M 1010 30 H 870 L 800 100 H 695" />
+        <circle class="node" cx="695" cy="100" r="4.5" />
+        <path class="data" d="M 1010 30 H 870 L 800 100 H 695" style="animation-duration: 3.2s;" />
+        <path class="trace" d="M 1010 40 H 880 L 810 110 H 707" />
+        <circle class="node" cx="707" cy="110" r="4.5" />
+        <path class="trace" d="M 1010 50 H 890 L 820 120 H 720" />
+        <circle class="node" cx="720" cy="120" r="4.5" />
+        <path class="data" d="M 1010 50 H 890 L 820 120 H 720" style="animation-duration: 2.9s;" />
+        <path class="trace" d="M 1010 60 H 900 L 830 130 H 719" />
+        <circle class="node" cx="719" cy="130" r="4.5" />
+        <path class="data" d="M 1010 60 H 900 L 830 130 H 719" style="animation-duration: 4.3s;" />
+        <path class="trace" d="M 1010 120 H 820 L 780 80 H 632" />
+        <circle class="node" cx="632" cy="80" r="4.5" />
+        <path class="data" d="M 1010 120 H 820 L 780 80 H 632" style="animation-duration: 2.8s;" />
+        <path class="trace" d="M 1010 130 H 810 L 770 90 H 647" />
+        <circle class="node" cx="647" cy="90" r="4.5" />
+        <path class="data" d="M 1010 130 H 810 L 770 90 H 647" style="animation-duration: 3.3s;" />
+        <path class="trace" d="M 1010 140 H 800 L 760 100 H 628" />
+        <circle class="node" cx="628" cy="100" r="4.5" />
+        <path class="trace" d="M 1010 150 H 790 L 750 110 H 608" />
+        <circle class="node" cx="608" cy="110" r="4.5" />
+        <path class="data" d="M 1010 150 H 790 L 750 110 H 608" style="animation-duration: 3.6s;" />
+        <path class="trace" d="M 1010 160 H 780 L 740 120 H 606" />
+        <circle class="node" cx="606" cy="120" r="4.5" />
+        <path class="data" d="M 1010 160 H 780 L 740 120 H 606" style="animation-duration: 2.9s;" />
+        <path class="trace" d="M 1010 170 H 770 L 730 130 H 580" />
+        <circle class="node" cx="580" cy="130" r="4.5" />
+        <path class="trace" d="M 1010 180 H 760 L 720 140 H 594" />
+        <circle class="node" cx="594" cy="140" r="4.5" />
+        <path class="data" d="M 1010 180 H 760 L 720 140 H 594" style="animation-duration: 2.5s;" />
+        <path class="trace" d="M 1010 190 H 750 L 710 150 H 567" />
+        <circle class="node" cx="567" cy="150" r="4.5" />
+        <path class="data" d="M 1010 190 H 750 L 710 150 H 567" style="animation-duration: 3.0s;" />
+        <path class="trace" d="M 1010 220 H 920 L 870 170 H 761" />
+        <circle class="node" cx="761" cy="170" r="4.5" />
+        <path class="data" d="M 1010 220 H 920 L 870 170 H 761" style="animation-duration: 3.9s;" />
+        <path class="trace" d="M 1010 230 H 910 L 860 180 H 747" />
+        <circle class="node" cx="747" cy="180" r="4.5" />
+        <path class="data" d="M 1010 230 H 910 L 860 180 H 747" style="animation-duration: 3.8s;" />
+        <path class="trace" d="M 1010 240 H 900 L 850 190 H 737" />
+        <circle class="node" cx="737" cy="190" r="4.5" />
+        <path class="data" d="M 1010 240 H 900 L 850 190 H 737" style="animation-duration: 4.4s;" />
+        <path class="trace" d="M 1010 250 H 890 L 840 200 H 737" />
+        <circle class="node" cx="737" cy="200" r="4.5" />
+        <path class="data" d="M 1010 250 H 890 L 840 200 H 737" style="animation-duration: 3.0s;" />
+        <path class="trace" d="M 1010 260 H 880 L 830 210 H 720" />
+        <circle class="node" cx="720" cy="210" r="4.5" />
+        <path class="data" d="M 1010 260 H 880 L 830 210 H 720" style="animation-duration: 2.9s;" />
+        <path class="trace" d="M 1010 270 H 870 L 820 220 H 703" />
+        <circle class="node" cx="703" cy="220" r="4.5" />
+        <path class="data" d="M 1010 270 H 870 L 820 220 H 703" style="animation-duration: 3.4s;" />
+        <path class="trace" d="M 1010 280 H 860 L 810 230 H 707" />
+        <circle class="node" cx="707" cy="230" r="4.5" />
+        <path class="data" d="M 1010 280 H 860 L 810 230 H 707" style="animation-duration: 2.6s;" />
+        <path class="trace" d="M 1010 -20 H 750 L 690 40 H 624" />
+        <circle class="node" cx="624" cy="40" r="4.5" />
+        <path class="trace" d="M 1010 -10 H 760 L 700 50 H 636" />
+        <circle class="node" cx="636" cy="50" r="4.5" />
+        <path class="trace" d="M 1010 0 H 770 L 710 60 H 625" />
+        <circle class="node" cx="625" cy="60" r="4.5" />
+        <path class="data" d="M 1010 0 H 770 L 710 60 H 625" style="animation-duration: 3.2s;" />
+        <path class="trace" d="M -10 110 H 388" />
+        <circle class="node" cx="388" cy="110" r="4.5" />
+        <path class="data" d="M -10 110 H 388" style="animation-duration: 3.4s;" />
+        <path class="trace" d="M -10 120 H 376" />
+        <circle class="node" cx="376" cy="120" r="4.5" />
+        <path class="data" d="M -10 120 H 376" style="animation-duration: 2.7s;" />
+        <path class="trace" d="M -10 130 H 361" />
+        <circle class="node" cx="361" cy="130" r="4.5" />
+        <path class="trace" d="M -10 140 H 372" />
+        <circle class="node" cx="372" cy="140" r="4.5" />
+        <path class="data" d="M -10 140 H 372" style="animation-duration: 2.7s;" />
+        <path class="trace" d="M 1010 170 H 625" />
+        <circle class="node" cx="625" cy="170" r="4.5" />
+        <path class="data" d="M 1010 170 H 625" style="animation-duration: 2.5s;" />
+        <path class="trace" d="M 1010 180 H 634" />
+        <circle class="node" cx="634" cy="180" r="4.5" />
+        <path class="data" d="M 1010 180 H 634" style="animation-duration: 2.6s;" />
+        <path class="trace" d="M 1010 190 H 602" />
+        <circle class="node" cx="602" cy="190" r="4.5" />
+        <path class="data" d="M 1010 190 H 602" style="animation-duration: 3.3s;" />
+        <path class="trace" d="M 1010 200 H 632" />
+        <circle class="node" cx="632" cy="200" r="4.5" />
+        <path class="data" d="M 1010 200 H 632" style="animation-duration: 3.0s;" />
 
-    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.06)" />
-      <path d="M 40 0 L 40 40 L 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
-    </pattern>
-
-    <style>
-      .circuit { fill: none; stroke: rgba(56, 189, 248, 0.2); stroke-width: 2; stroke-linejoin: bevel; stroke-linecap: round; }
-      
-      .node { fill: #020617; stroke: rgba(56, 189, 248, 0.4); stroke-width: 1.5; }
-      .node-main { fill: #020617; stroke: #0ea5e9; stroke-width: 2; }
-      .node-pulse { fill: #38bdf8; }
-      
-      @keyframes dash {
-        to { stroke-dashoffset: -1000; }
-      }
-      .circuit-active {
-        fill: none; stroke: #38bdf8; stroke-width: 2.5; stroke-linecap: round;
-        stroke-dasharray: 10 150; stroke-dashoffset: 0;
-        animation: dash 4s linear infinite;
-        filter: url(#circuit-glow);
-      }
-      .circuit-active-slow {
-        fill: none; stroke: #8b5cf6; stroke-width: 2.5; stroke-linecap: round;
-        stroke-dasharray: 15 200; stroke-dashoffset: 0;
-        animation: dash 6s linear infinite;
-        filter: url(#circuit-glow);
-      }
-    </style>
-  </defs>
-
-  <rect width="100%" height="100%" fill="url(#bg)" />
-  <rect width="100%" height="100%" fill="url(#grid)" />
-
-  <!-- Background Binary Decor -->
-  <g font-family="monospace" font-size="11" fill="rgba(56, 189, 248, 0.12)" letter-spacing="2">
-    <text x="30" y="40">AI_CORE_INIT: OK</text>
-    <text x="30" y="60">MEM: 0x8F9B2C</text>
-    <text x="30" y="260">SYS.PROCESS(1)</text>
+    </g>
     
-    <text x="840" y="40">NET_UPLINK: LIVE</text>
-    <text x="840" y="60">BW: 10.4 TB/s</text>
-    <text x="840" y="260">ML_MODEL: V4.2</text>
-  </g>
-
-  <!-- CPU Box Base -->
-  <rect x="220" y="70" width="560" height="160" fill="#020617" stroke="rgba(14, 165, 233, 0.5)" stroke-width="2" rx="8" />
-
-  <!-- CPU Pins Top & Bottom -->
-  <line x1="240" y1="64" x2="760" y2="64" stroke="rgba(56, 189, 248, 0.6)" stroke-width="6" stroke-dasharray="4 16" />
-  <line x1="240" y1="236" x2="760" y2="236" stroke="rgba(56, 189, 248, 0.6)" stroke-width="6" stroke-dasharray="4 16" />
-  
-  <!-- CPU Pins Left & Right -->
-  <line x1="214" y1="90" x2="214" y2="210" stroke="rgba(56, 189, 248, 0.6)" stroke-width="6" stroke-dasharray="4 16" />
-  <line x1="786" y1="90" x2="786" y2="210" stroke="rgba(56, 189, 248, 0.6)" stroke-width="6" stroke-dasharray="4 16" />
-
-  <!-- Passive Circuits -->
-  <!-- Left Side -->
-  <path class="circuit" d="M -20 100 H 120 V 120 H 210" />
-  <path class="circuit" d="M -20 160 H 150 V 180 H 210" />
-  <path class="circuit" d="M -20 220 H 90 V 200 H 210" />
-  <!-- Top Side -->
-  <path class="circuit" d="M 280 -20 V 40 H 320 V 60" />
-  <path class="circuit" d="M 650 -20 V 50 H 700 V 60" />
-  <!-- Right Side -->
-  <path class="circuit" d="M 1020 90 H 880 V 120 H 790" />
-  <path class="circuit" d="M 1020 150 H 850 V 170 H 790" />
-  <path class="circuit" d="M 1020 210 H 920 V 190 H 790" />
-  <!-- Bottom Side -->
-  <path class="circuit" d="M 350 320 V 270 H 400 V 240" />
-  <path class="circuit" d="M 680 320 V 280 H 620 V 240" />
-
-  <!-- Active Circuit Data Streams -->
-  <path class="circuit-active" d="M -20 100 H 120 V 120 H 210" />
-  <path class="circuit-active-slow" d="M 280 -20 V 40 H 320 V 60" />
-  <path class="circuit-active" d="M 1020 150 H 850 V 170 H 790" />
-  <path class="circuit-active-slow" d="M 680 320 V 280 H 620 V 240" />
-  <path class="circuit-active" d="M -20 220 H 90 V 200 H 210" />
-  <path class="circuit-active-slow" d="M 1020 90 H 880 V 120 H 790" />
-
-  <!-- Circuit Nodes -->
-  <g>
-    <!-- Left -->
-    <circle cx="120" cy="100" r="3" class="node" />
-    <circle cx="120" cy="120" r="3" class="node" />
-    <circle cx="150" cy="160" r="3" class="node" />
-    <circle cx="150" cy="180" r="3" class="node" />
-    <circle cx="90" cy="220" r="3" class="node" />
-    <circle cx="90" cy="200" r="3" class="node" />
-    <!-- Top -->
-    <circle cx="280" cy="40" r="3" class="node" />
-    <circle cx="320" cy="40" r="3" class="node" />
-    <circle cx="650" cy="50" r="3" class="node" />
-    <circle cx="700" cy="50" r="3" class="node" />
-    <!-- Right -->
-    <circle cx="880" cy="90" r="3" class="node" />
-    <circle cx="880" cy="120" r="3" class="node" />
-    <circle cx="850" cy="150" r="3" class="node" />
-    <circle cx="850" cy="170" r="3" class="node" />
-    <circle cx="920" cy="210" r="3" class="node" />
-    <circle cx="920" cy="190" r="3" class="node" />
-    <!-- Bottom -->
-    <circle cx="350" cy="270" r="3" class="node" />
-    <circle cx="400" cy="270" r="3" class="node" />
-    <circle cx="680" cy="280" r="3" class="node" />
-    <circle cx="620" cy="280" r="3" class="node" />
-  </g>
-
-  <!-- Pulsing Activity Core Nodes on the Motherboard -->
-  <g>
-    <circle cx="120" cy="120" r="2" class="node-pulse"><animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/></circle>
-    <circle cx="320" cy="40" r="2" class="node-pulse"><animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="850" cy="170" r="2" class="node-pulse"><animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/></circle>
-    <circle cx="620" cy="280" r="2" class="node-pulse"><animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/></circle>
-  </g>
-
-  <!-- Inner CPU Glow Layer (Animated) -->
-  <rect x="220" y="70" width="560" height="160" fill="none" stroke="#0ea5e9" stroke-width="4" rx="8" filter="url(#glow)">
-    <animate attributeName="stroke-opacity" values="0; 0.6; 0" dur="5s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- Typography -->
-  <g transform="translate(500, 150)">
-    <text x="0" y="-8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="8">SIHAN UDAYARATNA</text>
+    <!-- Dark overlay behind text so it's readable -->
+    <rect x="250" y="105" width="500" height="90" fill="#070c1a" opacity="0.85" rx="8" />
     
-    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#38bdf8" text-anchor="middle" letter-spacing="12">AI &amp; MACHINE LEARNING ENGINEER</text>
+    <!-- Central decorative box outline -->
+    <rect x="260" y="115" width="480" height="70" fill="none" stroke="#00ffff" stroke-width="1.5" opacity="0.3" rx="4" />
     
-    <!-- Central decorative scanning line -->
-    <rect x="-240" y="55" width="480" height="2" fill="url(#cyan-glow)">
-      <animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="4s" repeatCount="indefinite" />
-    </rect>
-  </g>
+    <g transform="translate(500, 145)">
+        <text x="0" y="-2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">SIHAN UDAYARATNA</text>
+        <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#00ffff" text-anchor="middle" letter-spacing="8">AI &amp; MACHINE LEARNING ENGINEER</text>
+    </g>
 </svg>
