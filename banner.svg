@@ -153,18 +153,9 @@
   <path d="M295,212 H310 V197" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.8"/>
   <path d="M705,212 H690 V197" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.8"/>
 
-  <!-- Name -->
-  <text x="500" y="150" text-anchor="middle"
+  <!-- Name — centered vertically -->
+  <text x="500" y="157" text-anchor="middle"
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-        font-size="44" font-weight="800" letter-spacing="5"
+        font-size="48" font-weight="800" letter-spacing="6"
         fill="url(#text-grad)">SIHAN UDAYARATNA</text>
-
-  <!-- Subtitle divider -->
-  <line x1="340" y1="168" x2="660" y2="168" stroke="#1e2d4a" stroke-width="1"/>
-
-  <!-- Role subtitle -->
-  <text x="500" y="190" text-anchor="middle"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-        font-size="12" font-weight="500" letter-spacing="5"
-        fill="#475569">AI &amp; MACHINE LEARNING ENGINEER</text>
 </svg>
